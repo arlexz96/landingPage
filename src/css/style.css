@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 *{
     margin: 0;
@@ -18,6 +19,7 @@
     border-bottom-right-radius: 30px;
     width: 100%;
     background-color: rgb(40, 50, 55);
+    z-index: 5;
 }
 
 #logo{
@@ -39,7 +41,6 @@
     gap: 70px;
 }
 
-
 #navegacion a{
     text-decoration: none;
     color: white;
@@ -58,6 +59,60 @@
     color: rgb(90, 149, 196);
 }
 
+#imagen-inicio{
+    background: linear-gradient(rgb(23, 27, 40),rgba(51, 78, 113,0.70)), url(../../public/img/imagen-fondo-inicio.webp) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+}
+
+#contenedor-imagen-inicio{
+    position: relative;
+}
+
+#contenedor-imagen-inicio #imagen-principal-inicio{
+    height: 100%;
+}
+
+#contenedor-imagen-inicio #logo-inicio{
+    width: 400px;
+    position: absolute;
+    bottom: 50%;
+    left: 8%;
+}
+
+#contenedor-imagen-inicio button{
+    position: absolute;
+    bottom: 15px;
+    left: 21%;
+    padding: 20px 50px;
+    background-color: rgb(90, 149, 196);
+    font-size: 20px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#contenedor-imagen-inicio button:hover{
+    cursor: pointer;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#contenedor-imagen-inicio p{
+    font-size: 50px;
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 #principal{
     display: flex;
 }
@@ -122,6 +177,27 @@
     width: 700px;
     height: 500px;
     padding: auto auto;
+}
+
+.descripcion-juego #boton-juega{
+    width: 30%;
+    align-self: center;
+    padding: 15px;
+    background-color: rgb(90, 149, 196);
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    margin-right: 8%;
+    font-family: "Skranji", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    opacity: .9;
+}
+
+.descripcion-juego #boton-juega:hover{
+    cursor: pointer;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 #seccion-contacto{
